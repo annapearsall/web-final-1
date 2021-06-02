@@ -1,0 +1,281 @@
+@import url(https://fonts.googleapis.com/css2?family=KoHo&family=Merriweather&display=swap);
+
+body {
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+p {
+  font-family: Merriweather, serif;
+  font-size: 20px;
+}
+
+li {
+  font-family: Merriweather, serif;
+  font-size: 20px;
+}
+
+a {
+  color: #D29C84;
+}
+
+
+h1 {
+  font-size: 64px;
+  text-align: center;
+  color: white;
+  font-family: KoHo, sans-serif;
+  position: absolute;
+  top: 25%;
+  width: 100%;
+  text-shadow: 2px 2px 3px black;
+}
+
+h2 {
+  font-family: KoHo, sans-serif;
+  font-size: 48px;
+  color: #8D9D93;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+h3 {
+  font-family: KoHo, sans-serif;
+  font-size: 32px;
+  color: #8D9D93;
+  margin-bottom: 0;
+}
+
+
+ul {
+  margin-bottom: 60px;
+}
+
+/* Styling the header */
+.header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+  margin: 30px 30px 10px 30px;
+  flex-flow: row wrap;
+}
+
+#logo {
+  width: 80px;
+}
+
+.menu-option {
+  background: #D29C84;
+  padding: 5px;
+  font-family: KoHo, sans-serif;
+  font-size: 18px;
+  border-radius: 5px;
+  text-align: center;
+  color: white;
+  width: 160px;
+  transition: all .75s ease;
+  margin: 10px 15px;
+}
+
+#catch-phrase {
+  font-family: KoHo, sans-serif;
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+
+/* Styling the body */
+
+#title {
+  background: url(https://i.imgur.com/w3khutM.jpg);
+  background-position: top;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 380px;
+  opacity: 60%;
+  margin-bottom: 50px;
+  position: relative;
+}
+
+.content {
+  max-width: 800px;
+  margin: auto;
+}
+
+#photos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.thumbnail {
+  height: 300px;
+  border-radius: 15px;
+  margin: 20px;
+}
+
+#fromhere {
+  border: solid 2px grey;
+}
+
+.top-button {
+  font-family: Merriweather, serif;
+  font-size: 18px;
+  padding: 7px;
+  background: #D29C84;
+  border-radius: 5px;
+  color: white;
+  max-width: 230px;
+  text-align: center;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 100px;
+  transition: all .75s ease;
+}
+
+.top-link {
+  text-decoration: none;
+}
+
+/* Styling lightbox */
+
+.lightbox {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 1em;
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.lightbox:target {
+  display: flex;
+  justify-content: center;
+  
+}
+
+.lightbox span {
+  /* Full width and height */
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+/* Styling footer */
+
+#footer {
+  color: white;
+  height: 180px;
+  background: #CEC5BC;
+  text-align: center;
+  font-family: merriweather, serif;
+  font-size: 20px;
+  padding-top: 25px;
+  margin-top: 50px;
+}
+
+hr {
+  width: 230px;
+}
+
+/* Interactivity */
+a:hover {
+  color: #9C715D;
+}
+
+.top-button:hover {
+  background: white;
+  color: #D29C84;
+  box-shadow: -2px 2px 4px rgba(0, 0, 0, 0.25);
+  text-decoration: none;
+}
+
+.menu-option:hover {
+  background: white;
+  color: #D29C84;
+  box-shadow: -2px 2px 4px rgba(0, 0, 0, 0.25);
+}
+
+/* Adding Media Queries */
+
+@media (max-width: 875px) {
+  
+  
+  .paragraph {
+    margin: 50px;
+    
+  }
+}
+
+@media (max-width: 960px) {
+  .header {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 1fr;
+    justify-items: center;
+  }
+  
+  #tcom-button {
+    grid-area: 1 / 1 / 2 / 2;
+  }
+  
+  #creative-button {
+    grid-area: 2 / 1 / 3 / 2;
+  }
+  
+  #academics-button {
+    grid-area: 1 / 3 / 2 / 4;
+  }
+  
+  #about-button-header {
+    grid-area: 2 / 3 / 3 / 4;
+  }
+  
+  #logo {
+    grid-area: 1 / 2 / 3 / 3;
+  }
+}
+
+@media (max-width: 450px) {
+  .menu-option {
+    font-size: 14px;
+    width: 110px;
+  }
+  p {
+    font-size: 16px;
+    margin: 10px 30px;
+  }
+  
+  h2 {
+    font-size: 40px;
+  }
+  
+  h3 {
+    font-size: 26px;
+    margin: 10px 30px 0px 30px;
+  }
+  
+  li {
+    font-size: 16px;
+    margin: 10px 30px;
+  }
+  
+  .link-option {
+    width: 300px;
+  }
+  
+  #title {
+    background-size: contain;
+    background-position: center;
+    height: 280px;
+  }
+}
