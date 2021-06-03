@@ -55,7 +55,7 @@ ul {
 }
 
 /* Styling the header */
-.header {
+#header {
   display: flex;
   align-items: flex-end;
   justify-content: space-around;
