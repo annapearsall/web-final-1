@@ -150,20 +150,6 @@ h2 {
   color: black; 
 }
 
-#top-button {
-  font-family: Merriweather, serif;
-  font-size: 18px;
-  padding: 7px;
-  background: #D29C84;
-  border-radius: 5px;
-  color: white;
-  max-width: 230px;
-  text-align: center;
-  margin: auto;
-  margin-top: 50px;
-  margin-bottom: 100px;
-}
-
 #footer {
   color: white;
   height: 180px;
