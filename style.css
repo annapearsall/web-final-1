@@ -146,6 +146,10 @@ h2 {
   text-align: center;
 }
 
+#phone {
+  color: black; 
+}
+
 #top-button {
   font-family: Merriweather, serif;
   font-size: 18px;
