@@ -39,7 +39,7 @@ h2 {
 }
 
 /* Styling the header */
-.header {
+#header {
   display: flex;
   align-items: flex-end;
   justify-content: space-around;
@@ -89,6 +89,12 @@ h2 {
   margin-bottom: 50px;
 }
 
+#link-container {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+}
+
 .link-option {
   font-family: KoHo, sans-serif;
   font-size: 48px;
@@ -98,9 +104,7 @@ h2 {
   border-radius: 5px;
   color: white;
   text-align: center;
-  margin: auto;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin: 20px auto;
 }
 
 /* Styling footer */
@@ -154,7 +158,7 @@ hr {
 }
 
 @media (max-width: 960px) {
-  .header {
+  #header {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr 1fr;
