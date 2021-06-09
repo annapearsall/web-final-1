@@ -124,32 +124,22 @@ h2 {
   /*TO BE A LINK TO ABOUT PAGE*/
 }
 
+#link-container {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+}
+
 .link-option {
   font-family: KoHo, sans-serif;
   font-size: 48px;
   padding: 10px;
-  max-width: 500px;
+  width: 400px;
   background: #8D9D93;
   border-radius: 5px;
   color: white;
   text-align: center;
-  
-}
-
-#technical {
-  margin: auto;
-  margin-top: 20px;
-}
-
-#creative {
-  margin: auto;
-  margin-top: 20px;
-}
-
-#academics {
-  margin: auto;
-  margin-top: 20px;
-  margin-bottom: 50px;
+  margin: 10px auto;
 }
 
 #contact {
@@ -224,7 +214,7 @@ hr {
 }
 
 @media (max-width: 960px) {
-  .header {
+  #header {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr 1fr;
