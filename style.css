@@ -121,7 +121,6 @@ h2 {
   text-align: center;
   align-item: center;
   margin: 10px 75px;
-  /*TO BE A LINK TO ABOUT PAGE*/
 }
 
 #link-container {
@@ -196,11 +195,8 @@ hr {
 /* Adding Media Queries */
 
 @media (max-width: 875px) {
-  
-  
   .paragraph {
     margin: 50px;
-    
   }
 }
 
@@ -249,5 +245,7 @@ hr {
     width: 300px;
   }
   
-  
+  #learn-more {
+    margin: 10px auto;
+  }
 }
