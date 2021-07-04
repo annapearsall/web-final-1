@@ -187,6 +187,10 @@ hr {
   width: 230px;
 }
 
+#phone {
+  color: white
+}
+
 /* Interactivity */
 a:hover {
   color: #9C715D;
