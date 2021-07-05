@@ -70,6 +70,16 @@ h2 {
   margin-bottom: 20px;
 }
 
+#dropdown-content {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  margin-top: -8px;
+}
+
+#dropdown:hover #dropdown-content {
+	display: block;
+}
 
 /* Styling the body */
 #title {
